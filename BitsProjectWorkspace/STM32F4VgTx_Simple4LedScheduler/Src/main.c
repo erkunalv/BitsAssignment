@@ -1,10 +1,24 @@
 /**
- ******************************************************************************
- * @file main.h
- * @date Feb 13, 2022
- * @author Kunal Verma
- * @details This file contains funtion definitions and
- *          main implementation of the project.
+  ******************************************************************************
+  * @file main.h
+  * @date Feb 13, 2022
+  * @author Kunal Verma
+  * @details This file contains funtion definitions and
+  *          main implementation of the project.
+  * @brief   Create 4 task and schedule them
+  * @requirement   1) Each Task of size 1KB
+  *                2) Each task having private stack
+  *                3) Scheduler private stack with 1 KB ram
+  *                4) Stack is FD(full descending here)
+  *                5) Round robbin pre-emptive scheduling
+  *                6) No task priority
+  *                7) Systick timer executing every 1 ms
+  *
+  * @SysTick count value calculation:
+  *                               * Processor clock = 16 Mhz
+  *                               * SysTick Timer count clock = 16 Mhz
+  *                               * 1ms = 1Khz
+  *                               * Reload value = 16Mhz/1Khz = 16000
  ******************************************************************************
  */
 
